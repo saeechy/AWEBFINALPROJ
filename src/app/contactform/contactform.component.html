@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="form-box">
+      <h2>Contact Form</h2>
+  
+      <form (submit)="addContacts($event)">
+        <div class="group">
+          <label for="contactName">Name:</label>
+          <input type="text" id="contactName" required>
+        </div>
+  
+        <div class="group">
+          <label for="contactEmail">Email:</label>
+          <input type="text" id="contactEmail" required>
+        </div>
+  
+        <div class="group">
+          <label for="contactSub">Subject:</label>
+          <input type="text" id="contactSub" required>
+        </div>
+  
+        <div class="group">
+          <label for="contactMess">Message:</label>
+          <textarea id="contactMess" rows="3" required></textarea>
+        </div>
+  
+        <button type="submit" class="submit-button">Submit</button>
+      </form>
+    </div>
+</div>

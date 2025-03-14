@@ -1,0 +1,57 @@
+<div class="container">
+  <h2>Volunteers List</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Message</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let volunteer of volunteers">
+        <td>{{ volunteer._id }}</td>
+        <td>{{ volunteer.name }}</td>
+        <td>{{ volunteer.phone }}</td>
+        <td>{{ volunteer.email }}</td>
+        <td>{{ volunteer.message }}</td>
+        <td>
+          <button (click)="deleteVolunteer(volunteer._id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="containerII">
+  <h2>Contact List</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Subject</th>
+        <th>Message</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let contact of contacts">
+        <td>{{ contact._id }}</td> 
+        <td>{{ contact.name }}</td>
+        <td>{{ contact.email }}</td>
+        <td>{{ contact.subject }}</td> 
+        <td>{{ contact.message }}</td>
+        <td>
+          <button (click)="deleteContact(contact._id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
