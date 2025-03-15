@@ -1,0 +1,22 @@
+<div class="container">
+    <h2>Subscriber's Email</h2>
+  
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Email</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let useremail of useremail">
+          <td>{{ useremail._id }}</td>
+          <td>{{ useremail.email }}</td>
+          <td>
+            <button (click)="deleteUseremail(useremail._id)">Subscribe</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
